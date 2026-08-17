@@ -1,0 +1,30 @@
+{
+  "run_name": "portfolio-validation-v1",
+  "result_kind": "synthetic_validation",
+  "synthetic_results": true,
+  "model_count": 6,
+  "models": [
+    "mock/guarded",
+    "mock/balanced",
+    "mock/helpful",
+    "mock/literal",
+    "mock/brittle",
+    "mock/permissive"
+  ],
+  "dataset_path": "data/benchmark/prompts.jsonl",
+  "dataset_sha256": "798389b54a0697c89c96ae57704530d82cb3a483c7350327f8be95d56c382528",
+  "dataset_prompt_count": 1536,
+  "stress_test_prompt_count": 500,
+  "result_row_count": 9216,
+  "executed_in_this_invocation": 9216,
+  "seed": 42,
+  "batch_size": 128,
+  "elapsed_seconds": 0.312,
+  "python_version": "3.12.13",
+  "library_versions": {
+    "pandas": "2.2.3",
+    "torch": null,
+    "transformers": null
+  },
+  "methodology": "docs/methodology.md"
+}

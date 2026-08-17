@@ -1,0 +1,48 @@
+{
+  "run_name": "open-source-six-model-benchmark-v1",
+  "result_kind": "measured_model_evaluation",
+  "dataset_path": "data/benchmark/prompts.jsonl",
+  "output_dir": "findings/open_source_6",
+  "batch_size": 4,
+  "seed": 42,
+  "resume": true,
+  "models": [
+    {
+      "id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "backend": "huggingface",
+      "max_new_tokens": 96,
+      "temperature": 0.0
+    },
+    {
+      "id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "backend": "huggingface",
+      "max_new_tokens": 96,
+      "temperature": 0.0
+    },
+    {
+      "id": "meta-llama/Llama-3.2-1B-Instruct",
+      "backend": "huggingface",
+      "max_new_tokens": 96,
+      "temperature": 0.0
+    },
+    {
+      "id": "google/gemma-2-2b-it",
+      "backend": "huggingface",
+      "max_new_tokens": 96,
+      "temperature": 0.0
+    },
+    {
+      "id": "microsoft/Phi-3.5-mini-instruct",
+      "backend": "huggingface",
+      "max_new_tokens": 96,
+      "temperature": 0.0,
+      "trust_remote_code": true
+    },
+    {
+      "id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "backend": "huggingface",
+      "max_new_tokens": 96,
+      "temperature": 0.0
+    }
+  ]
+}

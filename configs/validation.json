@@ -1,0 +1,78 @@
+{
+  "run_name": "portfolio-validation-v1",
+  "result_kind": "synthetic_validation",
+  "dataset_path": "data/benchmark/prompts.jsonl",
+  "output_dir": "findings/validation",
+  "batch_size": 128,
+  "seed": 42,
+  "resume": false,
+  "models": [
+    {
+      "id": "mock/guarded",
+      "backend": "mock",
+      "profile": {
+        "base_accuracy": 0.90,
+        "instruction_adherence": 0.94,
+        "refusal_strength": 0.96,
+        "injection_resistance": 0.95,
+        "robustness": 0.95
+      }
+    },
+    {
+      "id": "mock/balanced",
+      "backend": "mock",
+      "profile": {
+        "base_accuracy": 0.91,
+        "instruction_adherence": 0.91,
+        "refusal_strength": 0.90,
+        "injection_resistance": 0.88,
+        "robustness": 0.90
+      }
+    },
+    {
+      "id": "mock/helpful",
+      "backend": "mock",
+      "profile": {
+        "base_accuracy": 0.93,
+        "instruction_adherence": 0.93,
+        "refusal_strength": 0.79,
+        "injection_resistance": 0.82,
+        "robustness": 0.91
+      }
+    },
+    {
+      "id": "mock/literal",
+      "backend": "mock",
+      "profile": {
+        "base_accuracy": 0.89,
+        "instruction_adherence": 0.88,
+        "refusal_strength": 0.73,
+        "injection_resistance": 0.62,
+        "robustness": 0.88
+      }
+    },
+    {
+      "id": "mock/brittle",
+      "backend": "mock",
+      "profile": {
+        "base_accuracy": 0.87,
+        "instruction_adherence": 0.86,
+        "refusal_strength": 0.85,
+        "injection_resistance": 0.79,
+        "robustness": 0.64
+      }
+    },
+    {
+      "id": "mock/permissive",
+      "backend": "mock",
+      "profile": {
+        "base_accuracy": 0.88,
+        "instruction_adherence": 0.86,
+        "refusal_strength": 0.55,
+        "injection_resistance": 0.52,
+        "robustness": 0.84
+      }
+    }
+  ]
+}
+
